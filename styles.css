@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-family: "figtrees", system-ui, -apple-system, "Segoe UI", sans-serif;
     color: var(--text);
     background: var(--background);
     line-height: 1.6;
@@ -18,14 +18,26 @@ body {
     padding: 3rem 1.5rem;
 }
 
-h1 { font-size: 2.5rem; margin-bottom: 0,25rem; }
+h1 { 
+    font-size: 3.0rem;   /* Class 12: Step 2 - my own scale */
+    line-height: 1.1;
+    margin-bottom: 0,25rem; 
+}
 
 header p { color: var(--text-muted); font-size: 1.1rem; margin-top: o;}
 
 h2 {
+    font-size: 1.75rem;
+    line-height: 1.2;
     margin-top: 2.5rem;
     border-bottom: 1px solid var(--border);
     padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 footer { margin-top: 4rem; color: var(--text-muted); font-size: 0.9rem; }
@@ -39,3 +51,22 @@ a {
 }
 
 a:hover { border-bottom-color: var(--accent);}
+
+portait {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+ul {
+    padding-left: 1.25rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
