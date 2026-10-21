@@ -118,11 +118,11 @@ nav a.current {
     border-bottom-color: var(--text-muted);
     color: var(--text-muted)
 }
-
+/* Lab 13 : Task 5 - On my own */
 nav a:focus-visible {
     outline: 2px solid var (--accent); 
 }
-
+/* Lab 13 : Task 5 - On my own */
 nav ul {
     display: flex;
     justify-content: space-between;
