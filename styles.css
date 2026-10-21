@@ -92,18 +92,41 @@ li {
     margin-bottom: 0.75rem;
     padding-left: 1rem;
     border-left: 2px solid var(--accent);
+    border-right: 14px solid transparent;
 }
 
 /* Class 13 : Step 3 : The nav bar */
-
+/* Lab 13 : Step 4 - separate the var from the header*/
 nav {
     text-decoration: none;
     font-weight: 700;
-    padding-bottom: 0.25rem;
-    border-bottom: 2px solid transparent;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--border);
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav a hover {
     border-bottom-color: var(--accent);
 
 }
+
+/* Lab 13 : Task 1 - Current color style */
+nav a.current {
+    border-bottom-color: var(--text-muted);
+    color: var(--text-muted)
+}
+
+nav a:focus-visible {
+    outline: 2px solid var (--accent); 
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    border-right: 12px;
+    align-items: right;
+}
+
