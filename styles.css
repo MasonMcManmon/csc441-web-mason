@@ -21,10 +21,10 @@ body {
 h1 { 
     font-size: 3.0rem;   /* Class 12: Step 2 - my own scale */
     line-height: 1.1;
-    margin-bottom: 0,25rem; 
+    margin-bottom: 0.25rem; 
 }
 
-header p { color: var(--text-muted); font-size: 1.1rem; margin-top: o;}
+header p { color: var(--text-muted); font-size: 1.1rem; margin-top: 0;}
 
 header {
     /* Lab 12 : Task 4 - let the header stack when there isnt room */
@@ -44,17 +44,26 @@ h2 {
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
 }
 
 /* Lab 12 : Task 3 - Footer */
+/* Lab 14 : Task 4 - footer stacks on narrow screens */
 footer { 
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
     border-top: 1px solid var(--border);
     padding-top: 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
+/* Lab 14 : Task 4 - footer stacks on narrow screens */
+@media (min-width: 48rem) {
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 /* Lab 11 - Task 4 - Links */
@@ -108,7 +117,8 @@ nav {
     align-items: center;
 }
 
-nav a hover {
+
+nav a:hover {
     border-bottom-color: var(--accent);
 
 }
@@ -123,16 +133,33 @@ nav a:focus-visible {
     outline: 2px solid var (--accent); 
 }
 /* Lab 13 : Task 5 - On my own */
+/*Lab 14 : Task 1 - The nav stacks on narrow screens */
 nav ul {
+    list-style: none;
+    padding-left: 0;
     display: flex;
-    justify-content: space-between;
-    gap: 2px;
-    align-items: right;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.75rem;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+}
+/*Lab 14 : Task 1 - The nav stacks on narrow screens */
+@media (min-width: 48rem) {
+    nav ul {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
 }
 
 /* Class 14 : Task 2 - the cards go in a row*/
 .cards {
     display: flex;
+    /* Lab 14 : Task 6 - Allow wrapping */
+    flex-wrap: wrap;
     /* Class 14 : Task 3 - stack by default */
     flex-direction: column;
     gap: 1.5rem;
@@ -145,8 +172,16 @@ nav ul {
     border-radius: 8px;
 }
 /* Class 14 : Step 3 - a row when there's room*/
-@media (min-width: 40rem) {
+@media (min-width: 48rem) {
     .cards {
         flex-direction: row;
+        gap: 1.5rem;
     }
 }
+
+/* Lab 14 : Task 5 - Fixed Image size */
+img {
+    max-width: 100%;
+    height: auto;
+}
+

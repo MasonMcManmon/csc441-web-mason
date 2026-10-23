@@ -11,3 +11,16 @@ I would have had to wirte the code 3 times, once for each page.
 
 3. What is one thing on your page you don't know how to change yet?
 I dont know how to make a drop down menu yet. 
+
+## Week 9, Friday
+1. What width did you pick for your breakpoint, and how did you choose it?
+I went 48 as it seemed to work best. 
+
+2. The two things you found and fixed at phone width.
+I worked on my CSS for ul so it was cleaner. I allined it flex-end so it would be pushed to the right. I also added an image style for future images i plan to add.
+
+3. In your own words: what is the difference between justify-content and align-items?
+Justify moves itemas along the colum or rows direction while align moves items in a purpendiculare way.
+
+4. Why does the plain rule hold the narrow layout and the media query hold the wide one, instead of the other way round?
+The plain rule is for phones so everything fits on their smaller screens. While media query is for bigger screens.
