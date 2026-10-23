@@ -126,7 +126,27 @@ nav a:focus-visible {
 nav ul {
     display: flex;
     justify-content: space-between;
-    border-right: 12px;
+    gap: 2px;
     align-items: right;
 }
 
+/* Class 14 : Task 2 - the cards go in a row*/
+.cards {
+    display: flex;
+    /* Class 14 : Task 3 - stack by default */
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card {
+    flex: 1;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+/* Class 14 : Step 3 - a row when there's room*/
+@media (min-width: 40rem) {
+    .cards {
+        flex-direction: row;
+    }
+}
