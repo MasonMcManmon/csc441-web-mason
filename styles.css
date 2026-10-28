@@ -185,3 +185,11 @@ img {
     height: auto;
 }
 
+body.Light {
+    --text: Black;
+    --text-muted: Silver;
+    --accent: SkyBlue;
+    --background: White;
+    --border: dimgrey;
+}
+
