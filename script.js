@@ -46,14 +46,14 @@ const contactForm = document.querySelector("#Contact-Form");
 
 // Class 16 : Step 4 - Handleing the submit
 if (contactForm) {
-const formStatus = document.querySelector("#Form-Status");
+    const formStatus = document.querySelector("#Form-Status");
 
-contactForm.addEventListener("submit", function(event) {
-    event.preventDefault();
+    contactForm.addEventListener("submit", function(event) {
+        event.preventDefault();
 
-    const name = document.querySelector("#name").value;
-    formStatus.textContent = "Thanks, " + name + ".Your message is ready to send!";
+        const name = document.querySelector("#Name").value;
+        formStatus.textContent = "Thanks, " + name + ".Your message is ready to send!";
 
-    contactForm.reset();
-});
+        contactForm.reset();
+    });
 }
