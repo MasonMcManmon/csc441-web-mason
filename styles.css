@@ -185,3 +185,19 @@ img {
     height: auto;
 }
 
+body.Light {
+    --text: Black;
+    --text-muted: rgb(62, 60, 60);
+    --accent: #600b0b;
+    --background: White;
+    --border: #ef4f2f;
+}
+
+button {
+    background-color: var(--border);
+    color: var(--text);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}

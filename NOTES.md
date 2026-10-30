@@ -24,3 +24,19 @@ Justify moves itemas along the colum or rows direction while align moves items i
 
 4. Why does the plain rule hold the narrow layout and the media query hold the wide one, instead of the other way round?
 The plain rule is for phones so everything fits on their smaller screens. While media query is for bigger screens.
+
+## Week 10, Wednesday
+1. In your own words: what is the difference between HTML, CSS and JavaScript? One sentence each.
+HTML is like the bones/contents of a website. CSS is like the style/way a website looks. While JavaScript is like the brain of the website where all the functions and interactive parts of a website are.
+
+2. What does `defer` do on the script tag, and what breaks without it?
+Defer allows the HTML page to finish running first there for ensuing that when the skript runs the page will be fully load allowing the skript to find the needed information.
+
+3. Dark mode changed your whole site with five lines of CSS. Why did that work? What would you have had to do without variables?
+It worked because we called new colors using the JS file. And sense they are variables assigned to the colors when we called the dark or light color modes it reasings the virables which changes the color of everything assined with that variable.
+
+4. Something went wrong this week and the Console said nothing at all. What was it, and how did you eventually find it?
+We forgot .toggle in class which didnt show up in the console because the code could still run without having it. We found out when the button did nothing. WE saw we forgot .toggle and added it in and the button worked.
+
+5. What is one thing on your page you don't know how to change yet?
+I dont know how to add a data input and how to save the data not just locally. 
