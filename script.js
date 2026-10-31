@@ -47,13 +47,88 @@ const contactForm = document.querySelector("#Contact-Form");
 // Class 16 : Step 4 - Handleing the submit
 if (contactForm) {
     const formStatus = document.querySelector("#Form-Status");
+ 
+    // Lab 16 : Task 4 - One thing on your own
+    const message = document.querySelector("#Message");
+    const charCount = document.querySelector("#Char-Count");
 
+    if (message && charCount) {
+        message.addEventListener("input", function() {
+            charCount.textContent = message.value.length + " characters";
+        });
+    }
+
+    const nameInput = document.querySelector("#Name");
+    const emailInput = document.querySelector("#Email");
+    const messageInput = document.querySelector("#Message");
+   
+
+    nameInput.value = localStorage.getItem("draftName") || "";
+    emailInput.value = localStorage.getItem("draftEmail") || "";
+    messageInput.value = localStorage.getItem("draftMessage") || "";
+    charCount.textContent = messageInput.value.length + " Characters";
+
+    contactForm.addEventListener("input", function() {
+        localStorage.setItem("draftName", nameInput.value);
+        localStorage.setItem("draftEmail", emailInput.value);
+        localStorage.setItem("draftMessage", messageInput.value);
+    });
+
+
+
+    // Lab 16 : Task 1 - My own check before accepting it
     contactForm.addEventListener("submit", function(event) {
         event.preventDefault();
 
+        const draftName = nameInput.value;
+        const draftEmail = emailInput.value;
+        const draftMessage = messageInput.value;
+
+        // Lab 16 : Task 2 - clear the error message once they start fixing it
+        contactForm.addEventListener("input", function() {
+            if (formStatus.classList.contains("error")) {
+                formStatus.textContent = "";
+                formStatus.classList.remove("error");
+            }
+        });
+
+        event.preventDefault();
+
         const name = document.querySelector("#Name").value;
-        formStatus.textContent = "Thanks, " + name + ".Your message is ready to send!";
+        const message = document.querySelector("#Message").value;
+        const email = document.querySelector("#Email").value;
+
+    
+        if (name.length === 0) {
+            formStatus.textContent = "Please enter your name.";
+            formStatus.classList.add("error");
+            return;
+        }
+        if (email.length === 0) {
+            formStatus.textContent = "Please enter your email.";
+            formStatus.classList.add("error");
+            return;
+        }
+        if (message.length < 10) {
+            formStatus.textContent = "Please write at least 10 characters.";
+            formStatus.classList.add("error");
+            return;
+        }
+
+        formStatus.classList.remove("error");
+
+
+        formStatus.textContent = "Thanks, " + name + ".Your message has been sent!";
 
         contactForm.reset();
+
+        localStorage.removeItem("draftName");
+        localStorage.removeItem("draftEmail");
+        localStorage.removeItem("draftMessage");
+        
+        charCount.textContent = "0 Characters";
     });
 }
+
+
+

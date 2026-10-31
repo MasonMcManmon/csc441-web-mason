@@ -6,11 +6,15 @@
 /* Class 11 - Step 4: Basics */
 
 :root {
-    --text: #f4f2f2;
-    --text-muted: #e8e8eb;
-    --accent: #9f1717;
-    --background: #1a1a1a;
-    --border: #ef4f2f;
+    --text: #F1EFEC;
+    --text-muted: #A9A6A3;
+    --accent: #762B33;
+    --background: #17191D;
+    --border: #C9C1BC;
+    --error: lightsalmon;
+}
+head {
+    width: 100%;
 }
 
 body {
@@ -18,7 +22,7 @@ body {
     color: var(--text);
     background: var(--background);
     line-height: 1.6;
-    max-width: 42rem;
+    max-width: 90rem;
     margin: 0 auto;
     padding: 3rem 1.5rem;
 }
@@ -82,7 +86,6 @@ a {
 
 a:hover { 
     border-bottom-color: var(--accent);
-    font-size: 1.75rem;
 }
 
 .portrait {
@@ -112,14 +115,15 @@ li {
 /* Class 13 : Step 3 : The nav bar */
 /* Lab 13 : Step 4 - separate the var from the header*/
 nav {
-    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
     font-weight: 700;
     padding-bottom: 1rem;
     border-bottom: 2px solid var(--border);
     margin-bottom: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 
@@ -140,17 +144,21 @@ nav a:focus-visible {
 /* Lab 13 : Task 5 - On my own */
 /*Lab 14 : Task 1 - The nav stacks on narrow screens */
 nav ul {
-    list-style: none;
-    padding-left: 0;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex-direction: column; 
+    align-items: flex-end; 
     gap: 0.75rem;
+    List-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav a {
     display: inline-block;
-    padding: 0.25rem 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.25rem;
 }
 /*Lab 14 : Task 1 - The nav stacks on narrow screens */
 @media (min-width: 48rem) {
@@ -191,18 +199,19 @@ img {
 }
 
 body.Light {
-    --text: Black;
-    --text-muted: rgb(62, 60, 60);
-    --accent: #9f1717;
-    --background: White;
-    --border: #ef4f2f;
+    --text: #292629;
+    --text-muted: #706B6D;
+    --accent: #592027;
+    --background: #F5F2EF;
+    --border: #292B30;
+    --error: crimson;
 }
 
 button {
     font: inherit;
     font-weight: 700;
-    background-color: var(--border);
-    color: var(--text);
+    background-color: var(--accent);
+    color: var(--background);
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -236,10 +245,11 @@ form input:focus, form textarea:focus {
 form button {
     font: inherit;
     font-weight: 700;
-    color: var(--text);
-    background-color: var(--text-muted);
+    color: var(--background);
+    background-color: var(--accent);
     border: none;
     border-radius: 4px;
+    min-height: 44px;
     padding: 0.6rem;
     cursor: pointer;
 }
@@ -247,4 +257,20 @@ form button {
 #form-status {
     font-weight: 700;
     color: var(red)
+}
+
+#Contact-Form .form-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+#Contact-Form .form-row p {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Lab 16 : Task 1 - The error state */
+#Form-Status.error {
+    color: var(--error);
 }
