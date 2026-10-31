@@ -40,3 +40,22 @@ We forgot .toggle in class which didnt show up in the console because the code c
 
 5. What is one thing on your page you don't know how to change yet?
 I dont know how to add a data input and how to save the data not just locally. 
+
+
+## Week 10, Friday
+1. What does event.preventDefault() do, and what happens without it?
+It doesnt allow the form to clear the information while refreshing.
+
+2. You got "Cannot read properties of null" in class. In your own words, why did it happen, and why did if fix it?
+The if statment looks to see if the element is there before trying to use it.
+
+3. What rule did you write for your form, and why that rule?
+I wrote 3 rules to check to make sure each person put there name, email, and message of 10 characters or longer.
+
+4. The two things you found and fixed at phone width.
+    <!-- Lab 16 : Task 3 - 2 fixes -->
+    1. I broke my nav trying to do something and so i fixed it and it now back to stacking
+    2. In form button i added min-heigth 4- px to make the button big enough for phones.
+
+5. Your form does not actually send anything anywhere yet. What do you think is missing?
+It's missing a place to send the inputs from the contact form we just made.

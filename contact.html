@@ -32,7 +32,7 @@
     <!-- Class 11 - Step 2: the page -->
     <header>
         <!-- Class 12 : Step 3 - an image -->
-        <img src="images/me.jpg" alt="Portrait of Mason M." class="portrait">
+        <!-- <img src="images/me.jpg" alt="Portrait of Mason M." class="portrait"> -->
         <!-- Lab 12 : Task 1 - group the text so it stacks beside the photo -->
         <div>
             <h1>Contact</h1>
@@ -54,13 +54,37 @@
                 <p>(342) 123 - 4567</p>
             </section>
         </div>
+        <section class="card">
+
+            <!-- Class 16 : Step 2 - a form -->
+            <form id="Contact-Form">
+                <div class="form-row">
+                    <p>
+                        <label for="Name">Name: </label>
+                        <input id="Name" name="Name" type="text">
+                    </p>
+                    <p> 
+                        <label for="Email">Email: </label>
+                        <input id="Email" name="Email" type="email">
+                    </p>
+                </div>
+                <p>
+                    <label for="Message">Message: </label>
+                    <textarea id="Message" name="Message" rows="5"></textarea>
+                    <span id="Char-Count"> 0 Characters</span>
+                </p>
+                <button type="submit">Submit</button>
+            </form>
+
+            <p id="Form-Status" role="status"></p>
+        </section>
     </main>
 
     <footer>
         <!-- Lab 12 : Task 3 - two things in the footer -->
         <!-- Lab 15: Task 1 - My third file -->
         <p> © <span id="year"></span> - Mason M.</p>
-        <P> </P>
+        <button id="Back-to-top" type="button">Back to Top</button>
         <!-- Lab 11 - Task 3 - a link off my page -->
         <a href="https://github.com/MasonMcManmon/csc441-web-mason.git" target="_blank" rel="noopener">GitHub</a>
     </footer>
