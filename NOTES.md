@@ -59,3 +59,6 @@ I wrote 3 rules to check to make sure each person put there name, email, and mes
 
 5. Your form does not actually send anything anywhere yet. What do you think is missing?
 It's missing a place to send the inputs from the contact form we just made.
+
+## Week 11 wed
+Live site: https://masonmcmanmon.netlify.app/ 
