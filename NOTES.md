@@ -62,3 +62,17 @@ It's missing a place to send the inputs from the contact form we just made.
 
 ## Week 11 wed
 Live site: https://masonmcmanmon.netlify.app/ 
+
+1. In your own words: what does GitHub do, and what does Netlify do?
+GitHub sotres and shares the files you upload to it. Netlify hosts the connected repository as an accessible website.
+
+2. You are about to merge into development and your live site will
+not change. Why?
+Because we set the production branch to release so we have to merge releas and development to see updates on the site.
+
+3. What does the padlock in the address bar actually mean?
+It means the site and user connection is encrypted 
+
+4. Your repository is public and now your site is too. Is there
+anything in your repo you would not hand a stranger?
+No, i kept all personal information off the site
