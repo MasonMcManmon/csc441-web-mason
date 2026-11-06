@@ -274,3 +274,8 @@ form button {
 #Form-Status.error {
     color: var(--error);
 }
+
+/* Class 18 : Task 2 - the honeypot hidden from the people */
+.hidden-field {
+    display: none;
+}
