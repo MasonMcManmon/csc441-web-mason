@@ -120,7 +120,7 @@ if (contactForm) {
 
         formStatus.textContent = "Thanks, " + name + ".Your message has been sent!";
 
-        contactForm.reset();
+        contactForm.submit();
 
         localStorage.removeItem("draftName");
         localStorage.removeItem("draftEmail");

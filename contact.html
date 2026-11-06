@@ -16,8 +16,8 @@
 </head>
 
 <body>
-     <!-- Class 12 : step 2 : Navigation-->
-     <nav>
+    <!-- Class 12 : step 2 : Navigation-->
+    <nav>
         <!-- Lab 13 : Task 5 - name link-->
         <a href="index.html">Mason M.</a>
         <ul>
@@ -28,7 +28,7 @@
             <!-- Lab 15: Task 1 - My third file -->
             <li><button id="theme-toggle" type="button">Light Mode</button></li>
         </ul>
-     </nav>
+    </nav>
     <!-- Class 11 - Step 2: the page -->
     <header>
         <!-- Class 12 : Step 3 - an image -->
@@ -57,13 +57,17 @@
         <section class="card">
 
             <!-- Class 16 : Step 2 - a form -->
-            <form id="Contact-Form">
+            <!-- Class 18 : Step 1 - let netlify hand the form -->
+            <form id="Contact-Form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                <p class="hidden-field">
+                    <lable>Leave this empty: <input name="bot-field" type="text"></lable>
+                </p>
                 <div class="form-row">
                     <p>
                         <label for="Name">Name: </label>
                         <input id="Name" name="Name" type="text">
                     </p>
-                    <p> 
+                    <p>
                         <label for="Email">Email: </label>
                         <input id="Email" name="Email" type="email">
                     </p>
