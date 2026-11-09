@@ -76,3 +76,29 @@ It means the site and user connection is encrypted
 4. Your repository is public and now your site is too. Is there
 anything in your repo you would not hand a stranger?
 No, i kept all personal information off the site
+
+
+## Week 11, Friday
+1. Your form has a hidden field nobody can see. Explain what it is
+for, and why it works better than asking people to prove they
+are human.
+The hidden form is the honeypot and it is there to catch spam.
+
+2. What is a Deploy Preview, and when would you actually use one?
+Its a generated preview of the code that netlify makes which allows you to get a preview before you merge it. 
+you would use this to test you code before sending it to a live page.
+
+3. The two things you found and fixed on a real phone.
+I tested it and I did not see any of the listed issues.
+
+4. Describe the path a change takes from your laptop to the public,
+naming every branch it passes through.
+I save the code locally, then I push the code to git on the lab branch, then I merge it to development, Then I merge it to release, after its on relase it then netlify sees the pushed code and then deploys the new ones.
+
+5. Your site now has two addresses, the netlify.app one and your
+own domain. Why do both still work?
+They both work because they are both direct people to the same site. Netlify provides it's own free subdomain and I paid for my own.
+
+6. Your site is on the internet now. What is one thing you want to
+add before the end of the semester?
+The drop down nav bar for the mobile version to make it cleaner.
