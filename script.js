@@ -126,7 +126,9 @@ if (contactForm) {
         localStorage.removeItem("draftEmail");
         localStorage.removeItem("draftMessage");
         
-        charCount.textContent = "0 Characters";
+       if (message && charCount) {
+            charCount.textContent = "0 Characters";
+        }
     });
 }
 
