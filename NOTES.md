@@ -102,3 +102,23 @@ They both work because they are both direct people to the same site. Netlify pro
 6. Your site is on the internet now. What is one thing you want to
 add before the end of the semester?
 The drop down nav bar for the mobile version to make it cleaner.
+
+<!-- Lab 19 : Task 5 - Expaling -->
+The second request only got the title and category because those were the only fields requested. The descriptions and images are missing because the API was not asked to return them.
+
+
+## Week 12, Wednesday, Lab 19
+1. In your own words, what is stored in a database table?
+Data that can be sorted. It can be anything. its Strings or number or booleans that can be called at a later date via an api.
+
+2. What is the difference between a table and an API endpoint?
+A table is what stores the data while and api is the url that grants accesses to the table and information.
+
+3. What does GET do? What format did your endpoint return?
+GET is the request for information from a table. My endpoint returned my whole table in Json format already.
+
+4. Why do we use a publishable key, not a secret key?
+We use a publish key because its made for use between other applications.
+
+5. What changed when select=* became select=title,category?
+The select=* request returned all the information while the other one only returned the 2 requested fields.
