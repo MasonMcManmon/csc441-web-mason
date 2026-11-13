@@ -1,0 +1,27 @@
+[
+  {
+  "value": [
+    {
+      "title": "Call of Duty",
+      "category": "Competitive"
+    },
+    {
+      "title": "Rainbow 6 ",
+      "category": "Competitive"
+    },
+    {
+      "title": "Forza 5",
+      "category": "Entertainment"
+    },
+    {
+      "title": "Minecraft",
+      "category": "Creative"
+    },
+    {
+      "title": "Space Engineers 2",
+      "category": "Creative"
+    }
+  ],
+  "Count": 5
+  }
+]
