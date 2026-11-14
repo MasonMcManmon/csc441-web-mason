@@ -122,3 +122,19 @@ We use a publish key because its made for use between other applications.
 
 5. What changed when select=* became select=title,category?
 The select=* request returned all the information while the other one only returned the 2 requested fields.
+
+## Week 12, Friday — Lab 20
+1. What does fetch() send and what does response.json() return?
+Fetch sends a request to the API endpoint while response.json returns the information in json format.
+
+2. Why does the page use textContent instead of innerHTML?
+The page uses textContent instead of innerHTML so it doesn't treat it as HTML.
+
+3. What happens when Supabase returns an empty list?
+It returns an error message that says it couldn't find any data.
+
+4. How does the page behave when the network fails?
+It sends an error saying to check the console.
+
+5. What is the proof that a card is NOT hardcoded in HTML?
+You can watch the change when you change the data in Supabase without changing any of the code.
