@@ -56,6 +56,8 @@ if (contactForm) {
         message.addEventListener("input", function() {
             charCount.textContent = message.value.length + " characters";
         });
+
+        charCount.textContent = messageInput.value.length + " Characters";
     }
 
     const nameInput = document.querySelector("#Name");
@@ -66,7 +68,7 @@ if (contactForm) {
     nameInput.value = localStorage.getItem("draftName") || "";
     emailInput.value = localStorage.getItem("draftEmail") || "";
     messageInput.value = localStorage.getItem("draftMessage") || "";
-    charCount.textContent = messageInput.value.length + " Characters";
+
 
     contactForm.addEventListener("input", function() {
         localStorage.setItem("draftName", nameInput.value);
